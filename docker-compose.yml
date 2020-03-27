@@ -1,0 +1,22 @@
+version: '3.2'
+
+services:
+
+  server:
+    build:
+      context: ./server
+    ports:
+      - 8081:8081
+      - 443:443
+
+  backend:
+    build:
+      context: ./backend
+    volumes:
+      - ./backend/src/:/var/www/html/
+
+  frontend:
+    build:
+      context: ./frontend
+    ports:
+      - 80:80

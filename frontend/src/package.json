@@ -1,0 +1,12 @@
+{
+  "name": "application-name",
+  "version": "0.1.0",
+  "description": "project skeleton",
+  "main": "dist/server.js",
+  "repository": "git@github.com:jimmy4fingers/typescript-skeleton.git",
+  "author": "jimmy4fingers <jl.missguided@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "node server.js"
+  }
+}
